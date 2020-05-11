@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动态按钮</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body class='v'>
+  <button class="main">
+    <p>点点点</p>
+  </button>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $($('.main').click(
+    function(){
+      $(this).toggleClass('active')
+      $('.v').toggleClass('h')
+    }
+  ))
+</script>
+</html>
